@@ -30,17 +30,9 @@ int main(int argc, char *argv[]) {
 
 A la primera línia veiem que "incloem" una llibreria anomenada [raylib](https://www.raylib.com/index.html). El creador de Raylib la defineix com *una llibreria senzilla i fàcil de fer servir per gaudir programant videojocs*. Si tens una estona et pots entretenir mirant [els exemples](https://www.raylib.com/examples.html) o [aquesta xuleta](https://www.raylib.com/cheatsheet/cheatsheet.html) amb totes les funcions.
 
-Com que raylib és una llibreria que no pertany a l'especificació del llenguatge C, abans de fer-la servir, ens hem d'assegurar que la tenim correctament instal·lada. També, per tal que el nostre editor i compiladors sàpiguen on trobar-la, crearem una sèries d'arxius extres que ens ajudaràn.
+Com que raylib és una llibreria que no pertany a l'especificació del llenguatge C, abans de fer-la servir, ens hem d'assegurar que la tenim correctament instal·lada. Demana a un adult que t'ajudi a fer-ho si és necessari.
 
-Posa el codi següent en un arxiu anomenat `compile_flags.txt`:
-
-```
--I/opt/homebrew/Cellar/raylib/5.0/include
--I.
--std=c11
-```
-
-De la mateixa manera, li haurem d'indicar al compilador on pot trobar raylib. Per què no ho haguem d'escriure cada vegada, posarem la comanda per cridar al compilador en un *shell script*, un petit programa que executarem cada vegada que volguem compilar el codi.
+A més a més, li haurem d'indicar al compilador on pot trobar raylib. Perque no ho haguem d'escriure cada vegada, posarem la comanda per cridar al compilador en un *shell script*, un petit programa que executarem cada vegada que volguem compilar el codi.
 
 Posa el codi següent en un arxiu anomenat `build.sh`:
 
